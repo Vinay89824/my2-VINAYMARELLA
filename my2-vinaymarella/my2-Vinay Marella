@@ -1,4 +1,5 @@
 #Vinay Marella
+
 ##My favourite vacation spot is Paris
 The **Paris** is my dream place to visit in my life.The iconic biggest tower in the world which was **Eiffel tower** is the most attractive place in the city.There are many places to visit and roam in the paris.The culture which have adopted by citizens in the city is truely likely and shows some respect towards them.In this way the city have become my favourite place in the world.
 ---
@@ -17,3 +18,53 @@ Here are three activities that I spend most of time:
 1. Butter Donuts
 2. Freshly caught grilled fish
 3. Hand made Pies.
+
+Check out [My Profile](MyStats.md) for more details about me and a glimpse of my profile image!.
+
+### TABLES
+This table specifies details about the sports and their practice periods.
+| Game | Reason | Duration|
+| --- | --- | ---: |
+| Cricket | Teamspirit | 2 hours|
+| Golf | Focus | 25 min |
+| swimming | Relief | 45 min |
+| kabbadi | Exercise | 2 hour|
+
+***
+
+### Quotes
+&gt; &quot; "Get busy living or get busy dying." &quot;
+&gt;-*Stephen King*
+
+&gt; &quot;Never say never because limits, like fears, are often just illusions.
+about them.&quot;
+&gt;-*William Lawrence Bragg*
+
+***
+
+### Code Fencing
+
+&gt;How to return Exception object in IActionResult with proper status code and error message?
+
+&gt;Follow this quick link &lt;https://stackoverflow.com/questions/77031199/how-to-return-exception-
+object-in-iactionresult-with-proper-status-code-and-erro&gt; to learn more about this article...
+
+```html
+const isRequired = () =&gt; { throw new Error(&#39;param is required&#39;); };
+
+const hello = (name = isRequired()) =&gt; { console.log(`hello ${name}`) };
+
+// These will throw errors
+hello();
+hello(undefined);
+
+// These will not
+hello(null);
+hello(&#39;David&#39;);
+
+function multiply(a, b = 1) {
+return a * b;
+}
+```
+
+&gt;For more code snippets like this, click here &lt;https://css-tricks.com/snippets&gt;
