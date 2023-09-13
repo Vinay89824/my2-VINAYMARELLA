@@ -48,22 +48,24 @@ about them.&quot;
 
 &gt;Follow this quick link &lt;https://stackoverflow.com/questions/77031199/how-to-return-exception-object-in-iactionresult-with-proper-status-code-and-erro to learn more about this article...
 
-```html
-const isRequired = () =&gt; { throw new Error(&#39;param is required&#39;); };
+```wordpress
+<?php
+$posttags = get_the_tags(); // Get articles tags
+$home = get_bloginfo('url'); // Get homepage URL
 
-const hello = (name = isRequired()) =&gt; { console.log(`hello ${name}`) };
+// Check tagslug.png exists and display it
+if ($posttags) {
+ foreach($posttags as $tag) {
+       $image = "/images/tag-images/$tag->slug.png";
 
-// These will throw errors
-hello();
-hello(undefined);
+       if (file_exists("images/tag-images/$tag->slug.png")) {
+         echo '<a href="' . $home . '/tag/' . $tag->slug . '" /><img title="' . $tag->name . '" alt="' . $tag->name . '" src="' . $image . '" /></a>';
 
-// These will not
-hello(null);
-hello(&#39;David&#39;);
-
-function multiply(a, b = 1) {
-return a * b;
+       // If no image found, output something else, possibly nothing.
+       } else {
+         echo '<p>Not found</p>';
+       }
+  }
 }
-```
-
- click here &lt;https://css-tricks.com/snippets&gt;
+?>
+ click here &lt; https://css-tricks.com/snippets &gt;
